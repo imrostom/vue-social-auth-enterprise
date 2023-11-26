@@ -133,6 +133,19 @@ export default {
       popupOptions: { width: 527, height: 582 }
     },
 
+    linkedinOpenid: {
+      name: 'linkedin',
+      url: '/auth/linkedin',
+      authorizationEndpoint: 'https://www.linkedin.com/oauth/v2/authorization',
+      redirectUri: window.location.origin,
+      requiredUrlParams: ['state','scope'],
+      scope: ['profile','email', 'openid'],
+      scopeDelimiter: ' ',
+      state: 'STATE',
+      oauthType: '2.0',
+      popupOptions: { width: 527, height: 582 }
+    },
+
     vkontakte: {
       name: 'vkontakte',
       url: '/auth/vkontakte',
